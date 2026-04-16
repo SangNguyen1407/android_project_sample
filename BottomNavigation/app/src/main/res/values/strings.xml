@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">HOME</string>
+    <string name="setting_fragment">SETTING</string>
+    <string name="login_fragment">LOGIN</string>
+</resources>
