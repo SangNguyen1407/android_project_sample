@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Android</string>
+    <string name="about_title">About Us</string>
+    <string name="about_copyright">Copyright © 2018 &#8211; 2021</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="home_fragment">HOME</string>
