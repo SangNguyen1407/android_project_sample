@@ -7,4 +7,8 @@
     <string name="home_fragment">HOME</string>
     <string name="setting_fragment">SETTING</string>
     <string name="login_fragment">LOGIN</string>
+
+
+    <string name="btNext">&gt;</string>
+    <string name="btPreBack">&lt;</string>
 </resources>
