@@ -17,6 +17,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.navigationdrawer.NaviDrawerFragment.FavoriteFragment;
+import com.example.navigationdrawer.NaviDrawerFragment.HistoryFragment;
 import com.example.navigationdrawer.NaviDrawerFragment.HomeFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         replaceFragment(new HomeFragment());
-//        navigationView.getMenu().findItem(R.id.navi_home).setChecked(true);
+        navigationView.getMenu().findItem(R.id.navi_home).setChecked(true);
     }
 
     @Override
@@ -66,13 +68,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.navi_favorite){
             if (mCurrentFragment != FRAGMENT_FAVORITE){
-                replaceFragment(new HomeFragment());
+                replaceFragment(new FavoriteFragment());
                 mCurrentFragment = FRAGMENT_FAVORITE;
             }
         }
         else if (id == R.id.navi_history){
             if (mCurrentFragment != FRAGMENT_HISTORY){
-                replaceFragment(new HomeFragment());
+                replaceFragment(new HistoryFragment());
                 mCurrentFragment = FRAGMENT_HISTORY;
             }
         }
