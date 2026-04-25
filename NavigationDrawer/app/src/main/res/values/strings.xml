@@ -15,4 +15,7 @@
     <string name="txt_navi_home">HOME</string>
     <string name="txt_navi_favorite">FAVORITE</string>
     <string name="txt_navi_history">HISTORY</string>
+
+
+    <string name="txt_menu_price">円</string>
 </resources>
