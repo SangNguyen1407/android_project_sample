@@ -15,18 +15,27 @@ import androidx.fragment.app.Fragment;
 
 import com.example.navigationdrawer.R;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class HomeFragment extends Fragment {
+    TextView tvInfo;
+    ListView lvView;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ListView lvView = view.findViewById(R.id.lvMenu);
+        // This fragment has two UI elements: a ListView and a TextView
+        lvView = view.findViewById(R.id.lvMenu);
+        tvInfo = view.findViewById(R.id.tvInfo);
+
+        // Create data for ListView
         List<Map<String,String>> menuList = new ArrayList<>();
 
         // Create and add the first menu item
@@ -56,6 +65,7 @@ public class HomeFragment extends Fragment {
                 to
         );
         lvView.setAdapter(adapter);
+        // Click row in ListView, data shows in TextView
         lvView.setOnItemClickListener(new ListItemClickListener());
 
         return view;
@@ -68,8 +78,7 @@ public class HomeFragment extends Fragment {
             String cityName = item.get("name");
             String cityId = item.get("id");
 
-            TextView tvCityName = view.findViewById(R.id.tvCityName);
-            tvCityName.setText("       天気：");
+            tvInfo.setText(cityName + cityId + "の天気");
         }
     }
 }
