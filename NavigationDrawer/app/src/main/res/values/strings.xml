@@ -19,20 +19,10 @@
     <!-- TODO: Home fragment text -->
     <string name="txt_menu_price">円</string>
     <string name="list_menu">リスト選択サンプル</string>
-    <string-array name="lv_menu">
-        <item>唐揚げ</item>
-        <item>ハンバーグ定食</item>
-        <item>生姜焼き定食</item>
-        <item>ステーキ定食</item>
-        <item>野菜炒め定食</item>
-        <item>回鍋肉定食</item>
-        <item>麻婆豆腐定食</item>
-        <item>とんかつ定食</item>
-        <item>ミンチカツ定食</item>
-        <item>チキンかつ定食</item>
-        <item>コロッケ定食</item>
-        <item>焼き魚定食</item>
-        <item>焼肉定食</item>
-        <item>弱肉強食</item>
-    </string-array>
+
+    <!-- TODO: button text -->
+    <string name="bt_text">TEXT</string>
+    <string name="bt_switch">SWITCH</string>
+    <string name="bt_noticed">お知らせ</string>
+
 </resources>
